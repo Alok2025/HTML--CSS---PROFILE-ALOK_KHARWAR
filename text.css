@@ -1,0 +1,247 @@
+body { 
+    background-color: #101010;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Toolbar */
+.toolbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.toolbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar ul li {
+    margin: 0 15px;
+}
+
+.toolbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.toolbar ul li a:hover {
+    color: #e6f72c;
+}
+
+/* About Section */
+.boxA {
+    width: 100%;
+    background-image: url('p.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 60px; /* Space for fixed toolbar */
+    color: white;
+}
+
+.contA {
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.h1 {
+    font-weight: bold;
+    color: #e6f72c;
+    font-size: 3rem;
+}
+
+.profile_image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgba(230, 247, 44, 0.3);
+    border: 2px solid #333;
+}
+
+/* Skills and Projects Section */
+/* Container Styling */
+.contB {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+    color: #333;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Heading Styling */
+.section {
+    font-size: 1.8rem;
+    color: #222;
+    border-bottom: 2px solid #e6f72c;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+.skills-list, .projects-list, .education-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li, .projects-list li, .education-list li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.skills-list li:hover, .projects-list li:hover, .education-list li:hover {
+    background-color: #e6f72c;
+    transform: scale(1.02);
+}
+
+/* Accent Icons */
+.skills-list li::before, .projects-list li::before, .education-list li::before {
+    content: '•';
+    font-size: 1.5rem;
+    color: #e6f72c;
+    margin-right: 10px;
+}
+
+/* Strong Text Styling */
+.projects-list li strong, .education-list li strong {
+    color: #555;
+}
+
+/* Contact Section */
+.contC {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #e80d31, pink, #ea14a3);
+    box-sizing: border-box;
+    color: white;
+}
+
+.contC1 {
+    width: 70%;
+}
+
+.insta_qr {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.insta_qr img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* News and Notifications Section */
+/* Container Styling */
+.container {
+    width: 95%;
+    max-width: 800px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Title */
+.container-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e6f72c;
+    padding-bottom: 10px;
+}
+
+/* Section Styling */
+.section {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Section Headers */
+.section h3 {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Individual Item Styling */
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+/* Item Date */
+.item-date {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    width: 25%;
+}
+
+/* Item Text */
+.item-text {
+    color: #555;
+    width: 70%;
+    font-size: 0.95rem;
+}
+
+/* New Tag Styling */
+.new-tag {
+    color: #e6f72c;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-left: 8px;
+}
+
+/* Distinguishing Colors for Each Se
+
